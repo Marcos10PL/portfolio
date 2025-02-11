@@ -6,13 +6,13 @@ import { Suspense } from "react";
 
 export default function Page() {
   return (
-    <div>
+    <>
       <Home />
       <About />
       <Suspense>
         <Projects />
       </Suspense>
       <Contact />
-    </div>
+    </>
   );
 }

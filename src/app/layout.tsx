@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Nav from "@/components/website/nav";
+import Nav from "@/components/nav";
 import { Roboto_Slab } from "next/font/google";
+import Footer from "@/components/footer";
+import ButtonTop from "@/components/button-top";
 
 const robotoSlab = Roboto_Slab({
   subsets: ["latin", "latin-ext"],
@@ -10,6 +12,7 @@ const robotoSlab = Roboto_Slab({
 
 export const metadata: Metadata = {
   title: "Marek Kramarczyk",
+  description: "Strona portfolio - Marek Kramarczyk",
 };
 
 export default function RootLayout({
@@ -24,6 +27,10 @@ export default function RootLayout({
           <Nav />
         </header>
         <main>{children}</main>
+        <footer>
+          <Footer />
+        </footer>
+        <ButtonTop />
       </body>
     </html>
   );

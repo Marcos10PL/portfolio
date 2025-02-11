@@ -13,7 +13,7 @@ export default async function Projects() {
         {project.map(({ name, html_url, homepage, description, tech }) => (
           <div
             key={name}
-            className="text-left lg:w-[calc(50%-1rem)] rounded-lg rounded-ss-none shadow-[0_0_0.4rem_rgba(129,140,248)] px-3 py-2 flex-grow relative"
+            className="text-left lg:w-[calc(50%-1rem)] rounded-lg rounded-ss-none shadow-[0_0_0.4rem_rgba(129,140,248,.5)] px-3 py-2 flex-grow relative"
           >
             <h3 className="font-bold pb-3">{name}</h3>
 
@@ -27,13 +27,13 @@ export default async function Projects() {
               ))}
             </div>
 
-            <div className="uppercase flex gap-4 absolute bottom-0 left-0 px-3 py-2 *:flex *:items-center *:gap-1 *:transition-colors">
+            <div className="uppercase flex gap-4 absolute bottom-0 left-0 px-3 py-2 *:flex *:items-center *:gap-1 *:transition-colors *:text-indigo-300">
               <a
                 href={homepage}
                 target="_blank"
                 className="hover:text-indigo-400"
               >
-                <p>page</p>
+                <p>strona</p>
                 <LinkIcon className="w-5 h-5 " />
               </a>
               <a
@@ -41,7 +41,7 @@ export default async function Projects() {
                 target="_blank"
                 className="hover:text-indigo-400"
               >
-                <p>Code</p>
+                <p>kod</p>
                 <CodeBracketIcon className="w-5 h-5" />
               </a>
             </div>
