@@ -19,9 +19,7 @@ export default function Home() {
           <p className="text-center text-indigo-400">
             Student informatyki II roku
           </p>
-          <p className="text-center text-indigo-400">
-            Specjalizacja - web development
-          </p>
+          <p className="text-center text-indigo-400">Web development</p>
         </div>
       </div>
 
@@ -29,12 +27,11 @@ export default function Home() {
         to="about"
         smooth={true}
         duration={1000}
-        className="hover:text-slate-500 absolute bottom-0 cursor-pointer p-10"
+        className="hover:text-slate-500 absolute bottom-0 cursor-pointer p-14"
       >
         <ArrowDownCircleIcon className="w-10 h-10 animate-bounce transition-colors" />
       </Link>
 
-      
       {/* background */}
       <div className="absolute border-l border-r p-14 border-indigo-900 left-1/2 -translate-x-1/2 h-full border-dashed z-[-1]" />
     </section>

@@ -2,6 +2,7 @@ import About from "@/components/website/about";
 import Contact from "@/components/website/contact";
 import Home from "@/components/website/home";
 import Projects from "@/components/website/projects";
+import Skills from "@/components/website/skills";
 import { Suspense } from "react";
 
 export default function Page() {
@@ -9,6 +10,7 @@ export default function Page() {
     <>
       <Home />
       <About />
+      <Skills />
       <Suspense>
         <Projects />
       </Suspense>
