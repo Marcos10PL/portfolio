@@ -1,3 +1,4 @@
+import ScrollButtons from "@/components/scroll-buttons";
 import About from "@/components/website/about";
 import Contact from "@/components/website/contact";
 import Home from "@/components/website/home";
@@ -15,6 +16,7 @@ export default function Page() {
         <Projects />
       </Suspense>
       <Contact />
+      <ScrollButtons />
     </>
   );
 }

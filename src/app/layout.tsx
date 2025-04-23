@@ -3,7 +3,6 @@ import "../style/globals.css";
 import Nav from "@/components/nav";
 import { Roboto_Slab } from "next/font/google";
 import Footer from "@/components/footer";
-import ButtonTop from "@/components/button-top";
 
 const robotoSlab = Roboto_Slab({
   subsets: ["latin", "latin-ext"],
@@ -32,7 +31,6 @@ export default function RootLayout({
         <footer>
           <Footer />
         </footer>
-        <ButtonTop />
       </body>
     </html>
   );

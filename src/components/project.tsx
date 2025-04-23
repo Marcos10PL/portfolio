@@ -36,16 +36,18 @@ function NameAndLinks({
 }: {
   name: string;
   html_url: string;
-  homepage: string;
+  homepage: string | null;
 }) {
   return (
     <div className="bg-indigo-400/10 rounded-lg p-2 mb-2">
       <h3 className="uppercase font-bold pb-3">{name}</h3>
       <div className="uppercase flex justify-center gap-4 *:flex *:items-center *:gap-1 *:transition-colors *:text-indigo-300">
-        <a href={homepage} target="_blank" className="hover:text-indigo-400">
-          <LinkIcon className="w-5 h-5 " />
-          <p>strona</p>
-        </a>
+        {homepage && (
+          <a href={homepage} target="_blank" className="hover:text-indigo-400">
+            <LinkIcon className="w-5 h-5 " />
+            <p>strona</p>
+          </a>
+        )}
         <a href={html_url} target="_blank" className="hover:text-indigo-400">
           <CodeBracketIcon className="w-5 h-5" />
           <p>kod</p>

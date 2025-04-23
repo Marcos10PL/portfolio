@@ -10,7 +10,7 @@ const colorVariants = {
 type colorVariants = keyof typeof colorVariants;
 
 type SkillsProps = {
-  skills: string[];
+  skills: readonly string[];
   color: colorVariants;
 };
 

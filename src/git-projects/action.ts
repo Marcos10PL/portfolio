@@ -6,17 +6,12 @@ export async function fetchRepositories(): Promise<RepositoriesGithub[]> {
   const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&sort=updated`;
 
   const res = await fetch(url);
-  // headers: {
-  //   Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-  //   Accept: "application/vnd.github.v3+json",
-  // },
 
-  if (!res.ok) {
+  if (!res.ok)
     throw new Error(`GitHub API error: ${res.status} ${res.statusText}`);
-  }
 
   const data = await res.json();
-  console.log(data);
+
   const orderedRepositories = Object.keys(repositories).map(key => {
     const repoData = repositories[key];
     const apiRepo = data.items.find(

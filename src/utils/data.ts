@@ -37,7 +37,15 @@ export const backEndSkills = [
   "MongoDB",
 ] as const;
 
-export const otherSkills = ["Java", "C++", "Git", "GitHub", "Figma", "Vite"] as const;
+export const otherSkills = [
+  "Java",
+  "C++",
+  "Git",
+  "GitHub",
+  "Figma",
+  "Vite",
+  "Docker",
+] as const;
 
 export const links = {
   about: { name: "O mnie", to: "about", content: "O mnie", icon: faUser },
@@ -57,12 +65,13 @@ export const links = {
 } as const;
 
 export const linksArray = Object.values(links);
+export const linksIds = linksArray.map(link => link.to);
 
 export const repositories: RepositoriesData = {
   "projex-hub": {
     name: "Projex Hub",
     description:
-      "Aplikacja z logowaniem, która umożliwia zarządzanie projektami. Użytkownicy mogą też filtorwać i wyszukiwać swoje projekty. W każdym projekcie można tworzyć zadania i dodawać innych użytkowników. Strona stworzona w oparciu o MERN stack z dodatkiem TypeScriptu oraz Reduxa.",
+      "Aplikacja z logowaniem, która umożliwia zarządzanie projektami. Użytkownicy mogą też filtorwać i wyszukiwać swoje projekty. W każdym projekcie można tworzyć zadania i dodawać innych użytkowników. Strona stworzona w oparciu o MERN stack z dodatkiem TypeScriptu oraz Reduxa (wciąż w rozbudowie - brak podstrony home)",
     image: projexHubImage,
   },
   "your-movies": {
