@@ -45,6 +45,7 @@ export const otherSkills = [
   "Figma",
   "Vite",
   "Docker",
+  "pnpm",
 ] as const;
 
 export const links = {
@@ -126,7 +127,7 @@ export const ContactLinks = [
 ];
 
 export const aboutMe = `
-  Aktualnie studiuję informatykę na Uniwersytecie Śląskim w Katowicach.
+  Aktualnie studiuję informatykę (II rok) na Uniwersytecie Śląskim w Katowicach.
   Moją specjalizacją jest web development. Swoją przygodę w pogramowaniu
   rozpocząłem w szkole technicznej w Oświęcimiu, którą ukończyłem z
   tytułem Technik Informatyk. Od tamtej pory doskonale swoje

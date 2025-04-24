@@ -16,9 +16,6 @@ export default function Home() {
         </div>
 
         <div className="text-[1rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] font-bold space-y-1">
-          <p className="text-center text-indigo-400">
-            Student informatyki II roku
-          </p>
           <p className="text-center text-indigo-400">Web development</p>
         </div>
       </div>
