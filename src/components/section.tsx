@@ -46,7 +46,7 @@ export default function Section({
         />
 
         {/* button to go to the next id-section */}
-        <div className="absolute -right-14 mt-1 ">
+        <div className="absolute -right-14 mt-0.5">
           <NextLink id={to} />
         </div>
       </header>

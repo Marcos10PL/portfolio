@@ -1,4 +1,5 @@
-"use client";
+// "use client";
+
 import { linksIds } from "@/utils/data";
 import NextLink from "../components/next-link";
 
