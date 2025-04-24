@@ -71,25 +71,25 @@ export const repositories: RepositoriesData = {
   "projex-hub": {
     name: "Projex Hub",
     description:
-      "Aplikacja z logowaniem, która umożliwia zarządzanie projektami. Użytkownicy mogą też filtorwać i wyszukiwać swoje projekty. W każdym projekcie można tworzyć zadania i dodawać innych użytkowników. Strona stworzona w oparciu o MERN stack z dodatkiem TypeScriptu oraz Reduxa (wciąż w rozbudowie - brak podstrony home)",
+      "Aplikacja z logowaniem, umożliwia zarządzanie projektami. Użytkownicy mogą filtorwać i wyszukiwać projekty. Do każdego projektu można tworzyć zadania i dodawać użytkowników. Strona stworzona w oparciu o MERN stack.",
     image: projexHubImage,
   },
   "your-movies": {
     name: "Your Movies",
     description:
-      "Aplikacja napisana w Next.js (TypeScript) służąca do wyszukiwania filmów i seriali. Pozwala sprawdzać szczegółowe informacje o tytułach i śledzić premiery kinowe. Możliwe jest także obejrzenie traileru danego tytułu oraz zapoznanie się z jego obsadą. Strona pobiera dane z API TMDB.",
+      "Aplikacja napisana w Next.js służąca do wyszukiwania filmów i seriali. Pozwala sprawdzać informacje o tytułach i śledzić premiery kinowe. Możliwe jest np. obejrzenie traileru danego tytułu. Dane pochodzą z API TMDB.",
     image: yourMoviesImage,
   },
   "website-for-the-company": {
     name: "Strona dla firmy",
     description:
-      "Kompletny szablon strony internetowej dla przykładowej firmy. Strona wykorzystuje Bootstrapa i animacje CSS.",
+      "Kompletny szablon strony internetowej dla przykładowej firmy z kilkoma podstronami. Strona wykorzystuje Bootstrapa i animacje CSS.",
     image: websiteForTheCompanyImage,
   },
   games: {
     name: "Gry",
     description:
-      "Strona z grami takimi jak: kółko i krzyżyk, memory, wisielec, kamień-papier-nożyce. Gry mają różne tryby. Aplikacja napisana w React.js (TypeScript).",
+      "Strona z grami zawierająca kółko i krzyżyk, memory, wisielec oraz papier - kamień - nożyce. Każda gra ma różne tryby. Aplikacja napisana w React.js z użyciem TypeScriptu.",
     image: gamesImage,
   },
   "to-do-list": {
@@ -124,3 +124,13 @@ export const ContactLinks = [
     icon: faFacebook,
   },
 ];
+
+export const aboutMe = `
+  Aktualnie studiuję informatykę na Uniwersytecie Śląskim w Katowicach.
+  Moją specjalizacją jest web development. Swoją przygodę w pogramowaniu
+  rozpocząłem w szkole technicznej w Oświęcimiu, którą ukończyłem z
+  tytułem Technik Informatyk. Od tamtej pory doskonale swoje
+  umiejętności w wielu technologiach, ale głównie specjalizuję się w
+  tworzeniu różnych stron oraz aplikacji internetowych, które są
+  responsywne i przyjazne dla użytkownika.
+`;

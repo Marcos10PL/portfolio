@@ -1,4 +1,4 @@
-import Section from "../section";
+import Section from "../components/section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ContactLinks, links } from "@/utils/data";
 

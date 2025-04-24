@@ -9,10 +9,7 @@ type ProjectProps = {
 export default function Project({ project }: ProjectProps) {
   const { name, html_url, homepage, description, image } = project;
   return (
-    <div
-      key={name}
-      className="text-center w-full lg:w-[calc(50%-.7rem)] px-3 py-2 relative  rounded-lg border-indigo-400/50"
-    >
+    <div className="text-center relative rounded-lg border-indigo-400/50">
       <NameAndLinks name={name} html_url={html_url} homepage={homepage} />
 
       {image && (

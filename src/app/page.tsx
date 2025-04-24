@@ -1,9 +1,8 @@
-import ScrollButtons from "@/components/scroll-buttons";
-import About from "@/components/website/about";
-import Contact from "@/components/website/contact";
-import Home from "@/components/website/home";
-import Projects from "@/components/website/projects";
-import Skills from "@/components/website/skills";
+import About from "@/sections/about";
+import Contact from "@/sections/contact";
+import Home from "@/sections/home";
+import Projects from "@/sections/projects";
+import Skills from "@/sections/skills";
 import { Suspense } from "react";
 
 export default function Page() {
@@ -16,7 +15,6 @@ export default function Page() {
         <Projects />
       </Suspense>
       <Contact />
-      <ScrollButtons />
     </>
   );
 }

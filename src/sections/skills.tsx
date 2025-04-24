@@ -4,13 +4,24 @@ import {
   faPalette,
   faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
-import Skills, { SkillsHeader } from "../skills";
-import { backEndSkills, frontEndSkills, otherSkills } from "@/utils/data";
-import Section from "../section";
+import Skills, { SkillsHeader } from "../components/skills";
+import {
+  backEndSkills,
+  frontEndSkills,
+  links,
+  linksIds,
+  otherSkills,
+} from "@/utils/data";
+import Section from "../components/section";
 
 export default function SkillsSection() {
   return (
-    <Section id="skills" header="Skills" icon={faCode}>
+    <Section
+      id={links.skills.to}
+      header={links.projects.name}
+      icon={faCode}
+      to={linksIds[2]}
+    >
       <div className="flex flex-col items-center justify-center max-w-3xl mx-auto">
         <div className="flex gap-10 justify-center w-full">
           <SkillsHeader icon={faPalette} title="Frontend" color="orange-300" />
@@ -21,6 +32,7 @@ export default function SkillsSection() {
           />
           <SkillsHeader icon={faCodeFork} title="Inne" color="green-300" />
         </div>
+
         <div className="flex flex-wrap gap-3 justify-center">
           <Skills skills={frontEndSkills} color="orange-300" />
           <Skills skills={backEndSkills} color="indigo-300" />
