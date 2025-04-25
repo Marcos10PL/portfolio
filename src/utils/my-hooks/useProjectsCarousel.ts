@@ -12,11 +12,13 @@ export default function useProjectsCarousel() {
         setSlidesPerView(Number(swiperInstance.params.slidesPerView) || 1);
     };
 
+    handleResize();
+
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [swiperInstance]);
+  }, [swiperInstance?.params.slidesPerView, swiperInstance]);
 
   const handleClick = (slides: number) => {
     if (swiperInstance) {

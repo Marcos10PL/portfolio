@@ -35,6 +35,7 @@ export const backEndSkills = [
   "Node.js",
   "Express.js",
   "MongoDB",
+  "REST API",
 ] as const;
 
 export const otherSkills = [
@@ -46,6 +47,7 @@ export const otherSkills = [
   "Vite",
   "Docker",
   "pnpm",
+  "npm",
 ] as const;
 
 export const links = {
