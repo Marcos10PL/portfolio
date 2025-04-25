@@ -1,6 +1,6 @@
 "use client";
 
-import useScrollButton from "@/utils/useScrollButton";
+import useScrollButton from "@/utils/my-hooks/useScrollButton";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

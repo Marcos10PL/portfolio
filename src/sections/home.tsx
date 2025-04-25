@@ -1,7 +1,7 @@
 // "use client";
 
 import { linksIds } from "@/utils/data";
-import NextLink from "../components/next-link";
+import NextLink from "../components/section/next-link";
 
 export default function Home() {
   return (

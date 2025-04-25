@@ -1,5 +1,5 @@
 import { aboutMe, links, linksIds } from "@/utils/data";
-import Section from "../components/section";
+import Section from "../components/section/section";
 
 export default function About() {
   return (

@@ -12,13 +12,13 @@ import {
   linksIds,
   otherSkills,
 } from "@/utils/data";
-import Section from "../components/section";
+import Section from "../components/section/section";
 
 export default function SkillsSection() {
   return (
     <Section
       id={links.skills.to}
-      header={links.projects.name}
+      header={links.skills.name}
       icon={faCode}
       to={linksIds[2]}
     >

@@ -1,4 +1,4 @@
-import Section from "../components/section";
+import Section from "../components/section/section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ContactLinks, links } from "@/utils/data";
 import { faContactCard } from "@fortawesome/free-solid-svg-icons";

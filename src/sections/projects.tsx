@@ -1,6 +1,6 @@
 import { fetchRepositories } from "@/git-projects/action";
-import Section from "../components/section";
-import ProjectsCarousel from "../components/projectsCarousel";
+import Section from "../components/section/section";
+import ProjectsCarousel from "../components/projects/projectsCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
