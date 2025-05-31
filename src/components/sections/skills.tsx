@@ -1,10 +1,9 @@
 import {
-  faCode,
   faCodeFork,
   faPalette,
   faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
-import Skills, { SkillsHeader } from "../components/skills";
+import Skills, { SkillsHeader } from "../skills";
 import {
   backEndSkills,
   frontEndSkills,
@@ -12,14 +11,17 @@ import {
   linksIds,
   otherSkills,
 } from "@/utils/data";
-import Section from "../components/section/section";
+import Section from "../section/section";
+import { useTranslations } from "next-intl";
 
 export default function SkillsSection() {
+  const t = useTranslations("nav");
+
   return (
     <Section
       id={links.skills.to}
-      header={links.skills.name}
-      icon={faCode}
+      header={t(links.skills.to)}
+      icon={links.skills.icon}
       to={linksIds[2]}
     >
       <div className="flex flex-col items-center justify-center max-w-3xl mx-auto">

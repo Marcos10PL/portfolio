@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "about": "O mnie",
+    "skills": "Skills",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "sections": {
+    "aboutMe": "Aktualnie studiuję informatykę (II rok) na Uniwersytecie Śląskim w Katowicach. Moją specjalizacją jest web development. Swoją przygodę w pogramowaniu rozpocząłem w szkole technicznej w Oświęcimiu, którą ukończyłem z tytułem Technik Informatyk. Od tamtej pory doskonale swoje umiejętności w wielu technologiach, ale głównie specjalizuję się w tworzeniu różnych stron oraz aplikacji internetowych, które są responsywne i przyjazne dla użytkownika.",
+    "projects": {
+      "your-movies": {
+        "name": "Your Movies",
+        "description": "Aplikacja napisana w Next.js służąca do wyszukiwania filmów i seriali. Pozwala sprawdzać informacje o tytułach i śledzić premiery kinowe. Możliwe jest np. obejrzenie traileru danego tytułu. Dane pochodzą z API TMDB."
+      },
+      "money-mate": {
+        "name": "MoneyMate",
+        "description": "Aplikacja z autoryzacją ról - admin i user. Służy do zarządzania finansami. Umożliwia dodawanie przychodów i wydatków, a także ich filtrowanie i wyszukiwanie. Stworzona w Next.js (z shadcn/ui) + RTK Query. API stworzono w Laravelu."
+      },
+      "projex-hub": {
+        "name": "ProjexHUB",
+        "description": "Aplikacja z logowaniem, umożliwia zarządzanie projektami. Użytkownicy mogą filtorwać i wyszukiwać projekty. Do każdego projektu można tworzyć zadania i dodawać użytkowników. Strona stworzona w oparciu o MERN stack."
+      },
+      "website-for-the-company": {
+        "name": "Strona dla firmy",
+        "description": "Kompletny szablon strony internetowej dla przykładowej firmy z kilkoma podstronami. Strona wykorzystuje Bootstrapa i animacje CSS."
+      },
+      "games": {
+        "name": "Gry",
+        "description": "Strona z grami zawierająca kółko i krzyżyk, memory, wisielec oraz papier - kamień - nożyce. Każda gra ma różne tryby. Aplikacja napisana w React.js z użyciem TypeScriptu."
+      },
+      "to-do-list": {
+        "name": "To-Do List",
+        "description": "Interaktywna lista to-do, którą można dowolnie zarządzać. Lista jest zapisywana na bieżąco w plikach cookies. Napisana w czystym TypeScripcie."
+      },
+      "mini-apps": {
+        "name": "Mini aplikacje",
+        "description": "Strona internetowa z zegarem, prognozą pogody i stoperem. Strona korzysta z prostego API umożliwiającego pobranie aktualnej pogody. Strona stworzona w czystym JavaScripcie."
+      },
+      "moreOnMyGitHub": "Więcej na moim GitHubie"
+    }
+  }
+}

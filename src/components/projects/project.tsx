@@ -1,28 +1,65 @@
 import { RepositoriesGithub } from "@/utils/types";
 import { CodeBracketIcon, LinkIcon } from "@heroicons/react/24/solid";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useState } from "react";
+import { createPortal } from "react-dom";
 
 type ProjectProps = {
   project: RepositoriesGithub;
 };
 
 export default function Project({ project }: ProjectProps) {
-  const { name, html_url, homepage, description, image } = project;
+  const { name, html_url, homepage, image } = project;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const t = useTranslations("sections.projects");
+
   return (
-    <div className="text-center relative rounded-lg border-indigo-400/50">
-      <NameAndLinks name={name} html_url={html_url} homepage={homepage} />
-
-      {image && (
-        <Image
-          src={image}
-          alt={name}
-          className="rounded-lg mb-4 w-full"
-          sizes="100%"
+    <>
+      <div className="text-center rounded-lg border-indigo-400/50">
+        <NameAndLinks
+          name={t(`${name}.name`)}
+          html_url={html_url}
+          homepage={homepage}
         />
-      )}
 
-      <Description description={description} />
-    </div>
+        {image && (
+          <Image
+            src={image}
+            alt={name}
+            className="rounded-lg mb-4 w-full md:cursor-pointer pointer-events-none md:pointer-events-auto"
+            sizes="100%"
+            onClick={() => setIsModalOpen(true)}
+          />
+        )}
+
+        <Description description={t(`${name}.description`)} />
+      </div>
+
+      {image &&
+        isModalOpen &&
+        typeof window !== "undefined" &&
+        createPortal(
+          <div
+            className="fixed inset-0 z-50 backdrop-blur-sm flex items-center justify-center"
+            onClick={() => setIsModalOpen(false)}
+          >
+            <div
+              className="relative w-[90vw] h-[90vh]"
+              onClick={() => setIsModalOpen(false)}
+            >
+              <Image
+                src={image}
+                alt={name}
+                fill
+                className="object-contain rounded-lg"
+                priority
+              />
+            </div>
+          </div>,
+          document.body
+        )}
+    </>
   );
 }
 
@@ -37,7 +74,7 @@ function NameAndLinks({
 }) {
   return (
     <div className="bg-indigo-400/10 rounded-lg p-2 mb-2">
-      <h3 className="uppercase font-bold pb-3">{name}</h3>
+      <h3 className="font-bold pb-3">{name}</h3>
       <div className="uppercase flex justify-center gap-4 *:flex *:items-center *:gap-1 *:transition-colors *:text-indigo-300">
         {homepage && (
           <a href={homepage} target="_blank" className="hover:text-indigo-400">

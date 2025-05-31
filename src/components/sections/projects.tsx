@@ -1,19 +1,21 @@
 import { fetchRepositories } from "@/git-projects/action";
-import Section from "../components/section/section";
-import ProjectsCarousel from "../components/projects/projectsCarousel";
+import Section from "../section/section";
+import ProjectsCarousel from "../projects/projectsCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
 import { links, linksIds } from "@/utils/data";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 export default async function Projects() {
   const projects = await fetchRepositories();
-
+  const t = await getTranslations("nav");
+  
   return (
     <Section
       id={links.projects.to}
-      header={links.projects.name}
-      icon={faProjectDiagram}
+      header={t(links.projects.to)}
+      icon={links.projects.icon}
       to={linksIds[3]}
     >
       <div className="block w-[calc(100vw-3rem)] mx-auto relative md:text-lg xxl:text-2xl lg:px-14">
@@ -27,6 +29,8 @@ export default async function Projects() {
 }
 
 function Link() {
+  const t = useTranslations("sections.projects");
+
   return (
     <a
       href="https://github.com/Marcos10PL"
@@ -35,7 +39,9 @@ function Link() {
     >
       <div className="flex justify-center items-center gap-2">
         <FontAwesomeIcon icon={faGithub} width={20} />
-        <p>Więcej na moim githubie</p>
+        <p>
+          {t("moreOnMyGitHub")}
+        </p>
       </div>
     </a>
   );

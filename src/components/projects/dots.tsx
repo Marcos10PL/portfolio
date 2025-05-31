@@ -7,19 +7,23 @@ type DotsProps = {
   slidesPerView: number;
 };
 
-export default function Dots({ swiper, activeSlides, handleClick, slidesPerView }: DotsProps) {
+export default function Dots({
+  swiper,
+  activeSlides,
+  handleClick,
+  slidesPerView,
+}: DotsProps) {
   return (
     <div className="flex gap-2 justify-center mt-2">
       {swiper &&
         Array.from({
-          length: swiper.slides.length / slidesPerView,
+          length: Math.ceil(swiper.slides.length / slidesPerView),
         }).map((_, i) => (
           <button
             key={i}
             onClick={() => handleClick(i)}
             className={`w-3 h-3 rounded-full hover:bg-indigo-400 ${
-              activeSlides >= i * slidesPerView &&
-              activeSlides < (i + 1) * slidesPerView
+              Math.ceil(activeSlides / slidesPerView) === i
                 ? "bg-indigo-400"
                 : "bg-gray-500"
             }`}

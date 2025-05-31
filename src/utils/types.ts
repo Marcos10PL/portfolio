@@ -12,7 +12,6 @@ export type RepositoriesGithub = {
 export type RepositoriesData = {
   [key: string]: {
     name: string;
-    description: string;
     image?: StaticImageData;
   };
 };

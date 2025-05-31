@@ -1,14 +1,13 @@
-import Section from "../components/section/section";
+import Section from "../section/section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ContactLinks, links } from "@/utils/data";
-import { faContactCard } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   return (
     <Section
       id={links.contact.to}
       header={links.contact.name}
-      icon={faContactCard}
+      icon={links.contact.icon}
     >
       <div className="flex flex-wrap justify-center gap-8 max-w-96">
         {ContactLinks.map(({ name, url, icon }) => {

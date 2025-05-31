@@ -1,16 +1,20 @@
-import { aboutMe, links, linksIds } from "@/utils/data";
-import Section from "../components/section/section";
+import { links, linksIds } from "@/utils/data";
+import Section from "../section/section";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const tNav = useTranslations("nav");
+  const tAbout = useTranslations("sections");
+
   return (
     <Section
       id={links.about.to}
-      header={links.about.name}
+      header={tNav(links.about.to)}
       icon={links.about.icon}
       to={linksIds[1]}
     >
       <div className="mx-5 relative">
-        <p className="mb-4 max-w-3xl mx-auto px-2 py-1">{aboutMe}</p>
+        <p className="mb-4 max-w-3xl mx-auto px-3 py-1">{tAbout("aboutMe")}</p>
 
         {/* border */}
         <div className="absolute top-0 left-[-0.5rem] border-t border-indigo-400 w-20"></div>
