@@ -23,7 +23,6 @@ export async function fetchRepositories(): Promise<RepositoriesGithub[]> {
       name: repoData.name,
       html_url: apiRepo?.html_url,
       homepage: apiRepo?.homepage,
-      description: repoData.description,
       image: repoData.image,
     };
   });

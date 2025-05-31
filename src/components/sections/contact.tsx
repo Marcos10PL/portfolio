@@ -1,12 +1,15 @@
 import Section from "../section/section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ContactLinks, links } from "@/utils/data";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("nav");
+
   return (
     <Section
       id={links.contact.to}
-      header={links.contact.name}
+      header={t(links.contact.to)}
       icon={links.contact.icon}
     >
       <div className="flex flex-wrap justify-center gap-8 max-w-96">
