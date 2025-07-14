@@ -11,7 +11,7 @@ export default function Page() {
       <Home />
       <About />
       <Skills />
-      <Suspense>
+      <Suspense fallback={<div>Loading projects...</div>}>
         <Projects />
       </Suspense>
       <Contact />
