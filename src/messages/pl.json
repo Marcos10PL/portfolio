@@ -6,7 +6,7 @@
     "contact": "Kontakt"
   },
   "sections": {
-    "aboutMe": "Aktualnie studiuję informatykę (II rok) na Uniwersytecie Śląskim w Katowicach. Moją specjalizacją jest web development. Swoją przygodę w pogramowaniu rozpocząłem w szkole technicznej w Oświęcimiu, którą ukończyłem z tytułem Technik Informatyk. Od tamtej pory doskonale swoje umiejętności w wielu technologiach, ale głównie specjalizuję się w tworzeniu różnych stron oraz aplikacji internetowych, które są responsywne i przyjazne dla użytkownika.",
+    "aboutMe": "Aktualnie studiuję informatykę (III rok) na Uniwersytecie Śląskim w Katowicach. Moją specjalizacją jest web development. Swoją przygodę w pogramowaniu rozpocząłem w szkole technicznej w Oświęcimiu, którą ukończyłem z tytułem Technik Informatyk. Od tamtej pory doskonale swoje umiejętności w wielu technologiach, ale głównie specjalizuję się w tworzeniu różnych stron oraz aplikacji internetowych, które są responsywne i przyjazne dla użytkownika.",
     "projects": {
       "your-movies": {
         "name": "Your Movies",
