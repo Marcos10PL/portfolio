@@ -47,8 +47,11 @@ export const backEndSkills = [
 export const otherSkills = [
   "Java",
   "C++",
+  "MySQL Workbench",
   "Git",
   "GitHub",
+  "Jira",
+  "Postman",
   "Figma",
   "Vite",
   "Docker",
