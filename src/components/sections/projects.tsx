@@ -3,14 +3,14 @@ import Section from "../section/section";
 import ProjectsCarousel from "../projects/projectsCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { links, linksIds } from "@/utils/data";
+import { links, linksIds } from "@/data/data";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 
 export default async function Projects() {
   const projects = await fetchRepositories();
   const t = await getTranslations("nav");
-  
+
   return (
     <Section
       id={links.projects.to}
@@ -39,9 +39,7 @@ function Link() {
     >
       <div className="flex justify-center items-center gap-2">
         <FontAwesomeIcon icon={faGithub} width={20} />
-        <p>
-          {t("moreOnMyGitHub")}
-        </p>
+        <p>{t("moreOnMyGitHub")}</p>
       </div>
     </a>
   );

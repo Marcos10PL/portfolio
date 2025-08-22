@@ -1,18 +1,18 @@
-import { RepositoriesGithub } from "@/utils/types";
-import { CodeBracketIcon, LinkIcon } from "@heroicons/react/24/solid";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { useState } from "react";
-import { createPortal } from "react-dom";
+import { RepositoriesGithub } from "@/types"
+import { CodeBracketIcon, LinkIcon } from "@heroicons/react/24/solid"
+import { useTranslations } from "next-intl"
+import Image from "next/image"
+import { useState } from "react"
+import { createPortal } from "react-dom"
 
 type ProjectProps = {
-  project: RepositoriesGithub;
-};
+  project: RepositoriesGithub
+}
 
 export default function Project({ project }: ProjectProps) {
-  const { name, html_url, homepage, image } = project;
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const t = useTranslations("sections.projects");
+  const { name, html_url, homepage, image } = project
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const t = useTranslations("sections.projects")
 
   return (
     <>
@@ -60,7 +60,7 @@ export default function Project({ project }: ProjectProps) {
           document.body
         )}
     </>
-  );
+  )
 }
 
 function NameAndLinks({
@@ -68,9 +68,9 @@ function NameAndLinks({
   html_url,
   homepage,
 }: {
-  name: string;
-  html_url: string;
-  homepage: string | null;
+  name: string
+  html_url: string
+  homepage: string | null
 }) {
   return (
     <div className="bg-indigo-400/10 rounded-lg p-2 mb-2">
@@ -88,7 +88,7 @@ function NameAndLinks({
         </a>
       </div>
     </div>
-  );
+  )
 }
 
 function Description({ description }: { description: string }) {
@@ -96,5 +96,5 @@ function Description({ description }: { description: string }) {
     <div className="relative text-justify border-t-2 border-indigo-400/50 pt-2 pb-4">
       {description}
     </div>
-  );
+  )
 }

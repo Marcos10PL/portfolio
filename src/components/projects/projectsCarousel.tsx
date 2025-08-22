@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import Project from "./project";
-import { RepositoriesGithub } from "@/utils/types";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Project from "./project"
+import { RepositoriesGithub } from "@/types"
+import { Swiper, SwiperSlide } from "swiper/react"
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import Button from "./button";
-import Dots from "./dots";
-import useProjectsCarousel from "@/utils/my-hooks/useProjectsCarousel";
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
+import Button from "./button"
+import Dots from "./dots"
+import useProjectsCarousel from "@/hooks/useProjectsCarousel"
 
 type ProjectsCarouselProps = {
-  projects: RepositoriesGithub[];
-};
+  projects: RepositoriesGithub[]
+}
 
 export default function ProjectsCarousel({ projects }: ProjectsCarouselProps) {
   const {
@@ -24,7 +24,7 @@ export default function ProjectsCarousel({ projects }: ProjectsCarouselProps) {
     setActiveSlides,
     slidesPerView,
     handleClick,
-  } = useProjectsCarousel();
+  } = useProjectsCarousel()
 
   return (
     <>
@@ -64,5 +64,5 @@ export default function ProjectsCarousel({ projects }: ProjectsCarouselProps) {
         slidesPerView={slidesPerView}
       />
     </>
-  );
+  )
 }

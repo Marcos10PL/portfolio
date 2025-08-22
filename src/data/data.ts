@@ -4,16 +4,16 @@ import {
   faProjectDiagram,
   faPhone,
   faUser,
-} from "@fortawesome/free-solid-svg-icons";
-import yourMoviesImage from "../images/your-movies.png";
-import moneyMateImage from "../images/money-mate.png";
-import websiteForTheCompanyImage from "../images/website-for-the-company.png";
-import gamesImage from "../images/games.png";
-import toDoListImage from "../images/to-do-list.png";
-import miniAppsImage from "../images/mini-apps.png";
-import projexHubImage from "../images/projex-hub.png";
-import { RepositoriesData } from "./types";
-import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-solid-svg-icons"
+import yourMoviesImage from "../images/your-movies.png"
+import moneyMateImage from "../images/money-mate.png"
+import websiteForTheCompanyImage from "../images/website-for-the-company.png"
+import gamesImage from "../images/games.png"
+import toDoListImage from "../images/to-do-list.png"
+import miniAppsImage from "../images/mini-apps.png"
+import projexHubImage from "../images/projex-hub.png"
+import { RepositoriesData } from "../types"
+import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 export const frontEndSkills = [
   "HTML",
@@ -28,7 +28,7 @@ export const frontEndSkills = [
   "Next.js",
   "Redux",
   "RTK Query",
-] as const;
+] as const
 
 export const backEndSkills = [
   "PHP",
@@ -42,7 +42,7 @@ export const backEndSkills = [
   "mongoose",
   "sequelize",
   "REST API",
-] as const;
+] as const
 
 export const otherSkills = [
   "Java",
@@ -57,7 +57,7 @@ export const otherSkills = [
   "Docker",
   "pnpm",
   "npm",
-] as const;
+] as const
 
 export const links = {
   about: { to: "about", icon: faUser },
@@ -70,10 +70,10 @@ export const links = {
     to: "contact",
     icon: faEnvelope,
   },
-} as const;
+} as const
 
-export const linksArray = Object.values(links);
-export const linksIds = linksArray.map(link => link.to);
+export const linksArray = Object.values(links)
+export const linksIds = linksArray.map(link => link.to)
 
 export const repositories: RepositoriesData = {
   "your-movies": {
@@ -104,7 +104,7 @@ export const repositories: RepositoriesData = {
     name: "mini-apps",
     image: miniAppsImage,
   },
-};
+}
 
 export const ContactLinks = [
   {
@@ -123,4 +123,4 @@ export const ContactLinks = [
     url: "https://www.facebook.com/profile.php?id=100013527426866",
     icon: faFacebook,
   },
-];
+]

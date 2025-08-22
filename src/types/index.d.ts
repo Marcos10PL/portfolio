@@ -16,4 +16,3 @@ export type RepositoriesData = {
 };
 
 export type RepositoryData = RepositoriesData[keyof RepositoriesData];
-

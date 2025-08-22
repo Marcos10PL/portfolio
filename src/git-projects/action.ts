@@ -1,5 +1,5 @@
-import { repositories } from "@/utils/data";
-import { RepositoriesGithub, RepositoryData } from "@/utils/types";
+import { repositories } from "@/data/data";
+import { RepositoriesGithub, RepositoryData } from "@/types";
 
 export async function fetchRepositories(): Promise<RepositoriesGithub[]> {
   const query = `user:Marcos10PL language:JavaScript language:TypeScript language:HTML`;

@@ -1,4 +1,4 @@
-import { links, linksIds } from "@/utils/data";
+import { links, linksIds } from "@/data/data";
 import Section from "../section/section";
 import { useTranslations } from "next-intl";
 

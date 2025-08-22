@@ -1,6 +1,6 @@
 "use client";
 
-import { linksArray } from "@/utils/data";
+import { linksArray } from "@/data/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 import { Link } from "react-scroll";

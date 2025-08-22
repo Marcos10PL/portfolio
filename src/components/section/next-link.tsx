@@ -1,6 +1,6 @@
 "use client";
 
-import { linksIds } from "@/utils/data";
+import { linksIds } from "@/data/data";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-scroll";
 

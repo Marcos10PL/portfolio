@@ -1,6 +1,6 @@
 import Section from "../section/section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ContactLinks, links } from "@/utils/data";
+import { ContactLinks, links } from "@/data/data";
 import { useTranslations } from "next-intl";
 
 export default function Contact() {

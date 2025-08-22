@@ -10,7 +10,7 @@ import {
   links,
   linksIds,
   otherSkills,
-} from "@/utils/data";
+} from "@/data/data";
 import Section from "../section/section";
 import { useTranslations } from "next-intl";
 
