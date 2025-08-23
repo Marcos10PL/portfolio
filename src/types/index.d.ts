@@ -6,6 +6,7 @@ export type RepositoriesGithub = {
   html_url: string;
   homepage: string;
   image?: StaticImageData;
+  tech: string[];
 };
 
 export type RepositoriesData = {

@@ -27,7 +27,7 @@ export default function SwitchLanguage() {
   return (
     <div
       ref={ref}
-      className="fixed bottom-10 right-10 flex items-center z-50 bg-indigo-950 rounded-full gap-2"
+      className="fixed bottom-4 right-4 md:right-10 md:bottom-10 flex items-center z-50 bg-indigo-950 rounded-full gap-2"
     >
       {open && (
         <div className="rounded-full bg-indigo-800 hover:bg-indigo-700 transition-all px-1 py-1">

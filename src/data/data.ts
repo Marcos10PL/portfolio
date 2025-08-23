@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import yourMoviesImage from "../images/your-movies.png"
 import moneyMateImage from "../images/money-mate.png"
+import weatherAppImage from "../images/weather-app.png"
 import websiteForTheCompanyImage from "../images/website-for-the-company.png"
 import gamesImage from "../images/games.png"
 import toDoListImage from "../images/to-do-list.png"
@@ -28,6 +29,8 @@ export const frontEndSkills = [
   "Next.js",
   "Redux",
   "RTK Query",
+  "Vue.js",
+  "Pinia"
 ] as const
 
 export const backEndSkills = [
@@ -47,6 +50,7 @@ export const backEndSkills = [
 export const otherSkills = [
   "Java",
   "C++",
+  "GSAP",
   "MySQL Workbench",
   "Git",
   "GitHub",
@@ -87,6 +91,10 @@ export const repositories: RepositoriesData = {
   "projex-hub": {
     name: "projex-hub",
     image: projexHubImage,
+  },
+  weatherApp: {
+    name: "weather-app",
+    image: weatherAppImage,
   },
   "website-for-the-company": {
     name: "website-for-the-company",

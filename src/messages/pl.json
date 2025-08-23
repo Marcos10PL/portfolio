@@ -10,31 +10,35 @@
     "projects": {
       "your-movies": {
         "name": "Your Movies",
-        "description": "Aplikacja napisana w Next.js służąca do wyszukiwania filmów i seriali. Pozwala sprawdzać informacje o tytułach i śledzić premiery kinowe. Możliwe jest np. obejrzenie traileru danego tytułu. Dane pochodzą z API TMDB."
+        "description": "Aplikacja służąca do wyszukiwania filmów i seriali. Pozwala sprawdzać informacje o tytułach i śledzić premiery kinowe. Możliwe jest np. obejrzenie traileru danego tytułu. Dane pochodzą z API TMDB."
       },
       "money-mate": {
         "name": "MoneyMate",
-        "description": "Aplikacja z autoryzacją ról - admin i user. Służy do zarządzania finansami. Umożliwia dodawanie przychodów i wydatków, a także ich filtrowanie i wyszukiwanie. Stworzona w Next.js (z shadcn/ui) + RTK Query. API stworzono w Laravelu."
+        "description": "Aplikacja z autoryzacją ról - admin i user. Służy do zarządzania finansami. Umożliwia dodawanie przychodów i wydatków, a także ich filtrowanie i wyszukiwanie."
       },
       "projex-hub": {
         "name": "ProjexHUB",
-        "description": "Aplikacja z logowaniem, umożliwia zarządzanie projektami. Użytkownicy mogą filtorwać i wyszukiwać projekty. Do każdego projektu można tworzyć zadania i dodawać użytkowników. Strona stworzona w oparciu o MERN stack."
+        "description": "Aplikacja z autoryzacją, umożliwia zarządzanie projektami - tworzenie, filtorwanie i wyszukiwanie. Do każdego projektu można dodać zadania i innych użytkowników."
+      },
+      "weather-app": {
+        "name": "WeatherApp",
+        "description": "Interaktywna aplikacja pogodowa, która wyświetla 5-dniową prognozę pogody dla wybranego miasta. Zawiera animacje z GSAP. Korzysta z API OpenWeatherMap."
       },
       "website-for-the-company": {
         "name": "Strona dla firmy",
-        "description": "Kompletny szablon strony internetowej dla przykładowej firmy z kilkoma podstronami. Strona wykorzystuje Bootstrapa i animacje CSS."
+        "description": "Kompletny szablon strony internetowej dla przykładowej firmy z kilkoma podstronami. Strona stworzona z wykorzystaniem biblioteki Bootstrap. Zawiera animacje CSS."
       },
       "games": {
         "name": "Gry",
-        "description": "Strona z grami zawierająca kółko i krzyżyk, memory, wisielec oraz papier - kamień - nożyce. Każda gra ma różne tryby. Aplikacja napisana w React.js z użyciem TypeScriptu."
+        "description": "Strona z różnymi grami, zawiera Kółko i Krzyżyk, Memory, Wisielca oraz Papier - Kamień - Nożyce. Każda z gier posiada różne tryby."
       },
       "to-do-list": {
         "name": "To-Do List",
-        "description": "Interaktywna lista to-do, którą można dowolnie zarządzać. Lista jest zapisywana na bieżąco w plikach cookies. Napisana w czystym TypeScripcie."
+        "description": "Interaktywna lista to-do, którą można dowolnie zarządzać. Lista jest zapisywana na bieżąco w plikach cookies."
       },
       "mini-apps": {
         "name": "Mini aplikacje",
-        "description": "Strona internetowa z zegarem, prognozą pogody i stoperem. Strona korzysta z prostego API umożliwiającego pobranie aktualnej pogody. Strona stworzona w czystym JavaScripcie."
+        "description": "Strona internetowa z zegarem, prognozą pogody i stoperem. Strona korzysta z prostego API umożliwiającego pobranie aktualnej pogody."
       },
       "moreOnMyGitHub": "Więcej na moim GitHubie"
     }

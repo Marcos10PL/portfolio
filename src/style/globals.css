@@ -9,3 +9,12 @@
 body {
   background: var(--background);
 }
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+  padding-bottom: 0.8rem;
+}

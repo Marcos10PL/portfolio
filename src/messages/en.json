@@ -10,31 +10,35 @@
     "projects": {
       "your-movies": {
         "name": "Your Movies",
-        "description": "Application written in Next.js for searching for movies and series. It allows you to check information about titles and track cinema premieres. It is possible, for example, to watch a trailer for a given title. Data comes from the TMDB API."
+        "description": "An application for searching movies and TV shows. It allows checking information about titles and tracking cinema premieres. For example, you can watch a trailer of a given title. The data comes from the TMDB API."
       },
       "money-mate": {
         "name": "MoneyMate",
-        "description": "Application with role authorization - admin and user. It is used to manage finances. It allows you to add income and expenses, as well as filter and search them. Created in Next.js (with shadcn/ui) + RTK Query. API was created in Laravel."
+        "description": "An application with role-based authorization – admin and user. It is used for managing finances. It allows adding incomes and expenses, as well as filtering and searching them."
       },
       "projex-hub": {
         "name": "ProjexHUB",
-        "description": "Application with login, allows project management. Users can filter and search projects. Tasks can be created and users can be added to each project. Website created based on MERN stack."
+        "description": "An application with authorization that enables project management – creating, filtering, and searching. Each project can include tasks and other users."
+      },
+      "weather-app": {
+        "name": "WeatherApp",
+        "description": "An interactive weather application that displays a 5-day forecast for a selected city. It includes GSAP animations and it uses the OpenWeatherMap API."
       },
       "website-for-the-company": {
-        "name": "Website for the company",
-        "description": "Complete website template for an example company with several subpages. The site uses Bootstrap and CSS animations."
+        "name": "Company Website",
+        "description": "A complete website template for a sample company with several subpages. The website was built with Bootstrap. It includes CSS animations."
       },
       "games": {
         "name": "Games",
-        "description": "A gaming site featuring Tic Tac Toe, Memory, Hangman, and Rock-Paper-Scissors. Each game has different modes. App written in React.js."
+        "description": "A website with various games, including Tic Tac Toe, Memory, Hangman, and Rock–Paper–Scissors. Each game has different modes."
       },
       "to-do-list": {
         "name": "To-Do List",
-        "description": "An interactive to-do list that you can manage as you wish. The list is saved in cookies on an ongoing basis. Written in pure TypeScript."
+        "description": "An interactive to-do list that can be freely managed. The list is continuously saved in cookies."
       },
       "mini-apps": {
         "name": "Mini Apps",
-        "description": "Website with a clock, weather forecast and stopwatch. The website uses a simple API to get the current weather. Website created in pure JavaScript."
+        "description": "A website with a clock, weather forecast, and stopwatch. The site uses a simple API to fetch the current weather."
       },
       "moreOnMyGitHub": "More on my GitHub"
     }

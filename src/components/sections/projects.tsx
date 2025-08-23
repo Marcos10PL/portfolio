@@ -1,4 +1,4 @@
-import { fetchRepositories } from "@/git-projects/action";
+import { fetchRepositories } from "@/api/git-projects/action";
 import Section from "../section/section";
 import ProjectsCarousel from "../projects/projectsCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
